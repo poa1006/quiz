@@ -3,13 +3,21 @@
 #include <string.h>
 
 
-char smallest_character(char str[],char c,int i)
+
+char smallest_character(char str[],char c)
 {
-    if(str[i]>c)
-        return str[i];
-    else if(strlen(str)-1==i)
+    char temp;
+    if(strlen(str)==0)
+        return 0;
+    else if(str[0]>c)
         return str[0];
-    else
-        return smallest_character(str,c,++i);
+    else {
+        temp = smallest_character(str+1,c);
+        if(temp<c)
+            return str[0];
+        else
+            return temp;
+    }
+    return 0;
 
 }

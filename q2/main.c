@@ -21,7 +21,7 @@ int main()
         if(che%2==0)
             strcpy(str,line);
         else
-            printf("%c\n", smallest_character(str,line[0],0));
+            printf("%c\n", smallest_character(str,line[0]));
 
         i = 0,che++;
     }

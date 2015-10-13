@@ -4,7 +4,7 @@
 
 #include "iterative.h"
 
-char smallest_character(char str[],char c, int i)
+char smallest_character(char str[],char c)
 {
 
     int l =0, r = strlen(str)-1;

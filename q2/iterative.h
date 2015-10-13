@@ -3,7 +3,7 @@
 
 #define MAX_LINE_SIZE 32
 
-char smallest_character(char str[],char c,int i);
+char smallest_character(char str[],char c);
 
 
 #endif
