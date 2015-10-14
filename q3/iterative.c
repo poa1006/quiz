@@ -66,7 +66,7 @@ int main()
 
     printf("before flatten:\n");
     print_btree(root);
-    
+
     flatten(root);
     printf("after flatten :\n");
     print_btree(root);
