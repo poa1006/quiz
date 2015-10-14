@@ -3,13 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-typedef struct TREE_NODE {
-    int value;
-    struct TREE_NODE *left;
-    struct TREE_NODE *right;
-} TreeNode;
-
+#include "recursive.h"
 
 TreeNode *node_initialize(TreeNode *root,int num[],int index,int size)
 {
@@ -60,7 +54,7 @@ void flatten(TreeNode* root)
 {
     flat(root);
 }
-
+/*
 int main()
 {
     int num[]= {1,2,5,3,4,0,6};
@@ -77,4 +71,4 @@ int main()
     print_btree(root);
 
     return 0;
-}
+}*/
